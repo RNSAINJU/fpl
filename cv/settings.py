@@ -27,7 +27,7 @@ SECRET_KEY = "d44570c8b3b992805d6c7c290750a7bd4b31181a1275d92d"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','fplbhaktapur.pythonanywhere.com/','fplbhaktapur.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','fplbhaktapur.pythonanywhere.com','fplbhaktapur.herokuapp.com']
 
 
 # Application definition
