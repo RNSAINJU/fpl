@@ -27,7 +27,7 @@ SECRET_KEY = "d44570c8b3b992805d6c7c290750a7bd4b31181a1275d92d"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','rnsainju.pythonanywhere.com','fplbhaktapur.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','fplbhaktapur.pythonanywhere.com/','fplbhaktapur.herokuapp.com']
 
 
 # Application definition
@@ -41,11 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'aryan.apps.AryanConfig',
     'accounts',
-    # 'whitenoise',
 ]
 
 MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -151,5 +149,3 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 MEDIA_URL='/media/'
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
